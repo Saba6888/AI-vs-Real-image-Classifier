@@ -12,7 +12,7 @@ app = Flask(
 )
 
 # ─── Load Trained Model ─────────────────────────────────────────────────
-MODEL_PATH = r'C:\Users\LENOVO\OneDrive\Desktop\Project 3\AI_Image_Classifier\notebooks\models\ai_vs_real_classifier.h5'
+MODEL_PATH = r'path'
 
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"Model file not found at: {MODEL_PATH}")
@@ -74,4 +74,5 @@ def upload_image():
 
 # ─── Run Server ─────────────────────────────────────────────────────────
 if __name__ == '__main__':
+
     app.run(debug=True)
